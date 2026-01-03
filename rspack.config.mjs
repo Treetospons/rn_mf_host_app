@@ -47,8 +47,18 @@ export default Repack.defineRspackConfig({
         mini_app1: 'mini_app1@http://localhost:3011/android/mf-manifest.json',
       },
       shared: {
-        react: { singleton: true, eager: true },
-        'react-native': { singleton: true, eager: true },
+        react: { singleton: true, eager: true, requiredVersion: '19.1.0' },
+        'react-native': { singleton: true, eager: true, requiredVersion: '0.80.0' },
+        'react-native-screens': { singleton: true, eager: true },
+        'react-native-safe-area-context': { singleton: true, eager: true },
+        '@react-native/new-app-screen': { singleton: true, eager: true },
+        '@react-navigation/native': { singleton: true, eager: true },
+        '@react-navigation/native-stack': { singleton: true, eager: true },
+        '@react-navigation/elements': { singleton: true, eager: true },
+        '@react-navigation/bottom-tabs': { singleton: true, eager: true },
+        '@react-native-masked-view/masked-view': { singleton: true, eager: true },
+        'react-native-vision-camera': { singleton: true, eager: true },
+        'react-native-permissions': { singleton: true, eager: true },
       },
       dts: false
     })
