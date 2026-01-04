@@ -8,6 +8,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>()
 
 const MiniApp1HomeScreen = lazy(async () => await import('mini_app1/MiniApp1Home'))
 const MiniApp1CameraScreen = lazy(async () => await import('mini_app1/MiniApp1Camera'))
+const MiniApp1EnvScreen = lazy(async () => await import('mini_app1/MiniApp1Env'))
 
 const Navigation = () => {
     return (
@@ -16,6 +17,7 @@ const Navigation = () => {
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="MiniApp1" component={MiniApp1HomeScreen} />
                 <Stack.Screen name="Camera" component={MiniApp1CameraScreen} />
+                <Stack.Screen name="Env" component={MiniApp1EnvScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

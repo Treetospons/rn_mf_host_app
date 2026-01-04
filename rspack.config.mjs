@@ -59,6 +59,7 @@ export default Repack.defineRspackConfig({
         '@react-native-masked-view/masked-view': { singleton: true, eager: true },
         'react-native-vision-camera': { singleton: true, eager: true },
         'react-native-permissions': { singleton: true, eager: true },
+        'react-native-config': { singleton: true, eager: true },
       },
       dts: false
     })

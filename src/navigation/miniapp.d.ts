@@ -9,3 +9,7 @@ declare module 'mini_app1/MiniApp1Home' {
 declare module 'mini_app1/MiniApp1Camera' {
     export default React.Component;
 }
+
+declare module 'mini_app1/MiniApp1Env' {
+    export default React.Component;
+}
