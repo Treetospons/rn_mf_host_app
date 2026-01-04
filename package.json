@@ -9,7 +9,7 @@
     "ios": "ENVFILE=.env.dev react-native run-ios --simulator 'iPhone 17 Pro'",
     "lint": "eslint .",
     "start": "react-native start",
-    "mf-bundle:android": "ENVFILE=.env.dev react-native bundle --platform android --dev false --entry-file index.js",
+    "mf-bundle:android": "ENVFILE=.env.dev react-native bundle --platform android --dev false --entry-file index.js --reset-cache",
     "mf-bundle:ios": "ENVFILE=.env.dev react-native bundle --platform ios --dev false --entry-file index.js",
     "js-bundle:ios": "ENVFILE=.env.dev react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle --assets-dest ios",
     "test": "jest"
