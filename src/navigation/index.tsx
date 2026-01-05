@@ -2,13 +2,14 @@ import React, { lazy, Suspense } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {Federated} from '@callstack/repack/client'
 import HomeScreen from '../views/home'
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
-const MiniApp1HomeScreen = lazy(async () => await import('mini_app1/MiniApp1Home'))
-const MiniApp1CameraScreen = lazy(async () => await import('mini_app1/MiniApp1Camera'))
-const MiniApp1EnvScreen = lazy(async () => await import('mini_app1/MiniApp1Env'))
+const MiniApp1HomeScreen = lazy(() => Federated.importModule('mini_app1', './MiniApp1Home'))
+const MiniApp1CameraScreen = lazy(() => Federated.importModule('mini_app1', './MiniApp1Camera'))
+const MiniApp1EnvScreen = lazy(() => Federated.importModule('mini_app1', './MiniApp1Env'))
 
 const Navigation = () => {
     return (

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "plan": {
+      "mode": "primary",
+      "model": "big-pickle",
+      "prompt": "{file:./prompts/plan.txt}",
+      "tools": {
+        "write": false,
+        "edit": false,
+      }
+    },
+  }
+}

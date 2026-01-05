@@ -49,9 +49,6 @@ const config = (_env) => {
       }),
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'host_app',
-        remotes: {
-          mini_app1: 'mini_app1@http://localhost:3011/android/mf-manifest.json',
-        },
         shared: {
           react: { singleton: true, eager: true, requiredVersion: '19.1.0' },
           'react-native': { singleton: true, eager: true, requiredVersion: '0.80.0' },
